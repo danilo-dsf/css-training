@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora CSS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #background-circle {
+      width: 600px;
+      height: 600px;
+      background: rgb(110, 225, 255);
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #calculator-shell {
+      margin-top: 100px;
+      width: 400px;
+      height: 450px;
+      background: rgb(45, 86, 161);
+      border-radius: 20px;
+    }
+
+    #calculator-shell::before {
+      content: '';
+      background: green;
+      width: 80%;
+      height: 80%;
+    }
+
+    #display-container {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 40px;
+    }
+
+    #top-display {
+      width: 150px;
+      height: 40px;
+      background: rgb(255, 195, 5);
+      margin-right: 10px;
+      align-self: flex-end;
+
+      box-shadow: 0px 8px 1px rgb(26, 57, 107);
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #top-display::before {
+      content: '';
+      background: rgb(248, 224, 0);
+      width: 66%;
+      height: 100%;
+    }
+
+    #bottom-display {
+      width: 300px;
+      height: 60px;
+      background: rgb(40, 150, 255);
+      align-self: center;
+      margin-top: 20px;
+
+      box-shadow: 0px 8px 1px rgb(26, 57, 107);
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #bottom-display::before {
+      content: '';
+      background: rgb(110, 225, 255);
+      width: 80%;
+      height: 80%;
+      border-bottom-left-radius: 30px;
+    }
+
+    #buttons-container {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .button {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      background: rgb(255, 133, 0);
+
+      box-shadow: 0px 8px 1px rgb(26, 57, 107);
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .button::before {
+      content: '';
+      background: rgb(255, 195, 5);
+      width: 80%;
+      height: 80%;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="background-circle">
+    <div id="calculator-shell">
+      <div id="display-container">
+        <div id="top-display"></div>
+        <div id="bottom-display"></div>
+      </div>
+      <div id="buttons-container">
+        <div id="buttons-grid">
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+          <div class="button"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
