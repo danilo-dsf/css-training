@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartphone CSS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+      border: 1px solid red;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+    }
+
+    #background-square {
+      width: 500px;
+      height: 500px;
+      background: #e74c3c;
+      border-radius: 5px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #smartphone-border {
+      width: 300px;
+      height: 500px;
+      background: #2c3e50;
+      border-radius: 25px;
+      margin-bottom: 200px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #smartphone-screen {
+      width: 90%;
+      height: 430px;
+      background: #f1c40f;
+      border-radius: 10px;
+    }
+
+    #smartphone-button {
+      width: 60px;
+      height: 30px;
+      border-radius: 20px;
+      background: #0c1116;
+      margin-top: 10px;
+    }
+
+    #smartphone-statusbar {
+      height: 20px;
+      width: 100%;
+      background: #f39c12;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    #smartphone-statusbar div {
+      padding: 2px;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    #smartphone-statusbar span, img {
+      margin-left: 4px;
+    }
+
+    #smartphone-statusbar span {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+    <div id="background-square">
+      <div id="smartphone-border">
+        <div id="smartphone-screen">
+          <div id="smartphone-statusbar">
+            <div>
+              <img src="https://cdn0.iconfinder.com/data/icons/feather/96/clock-512.png" alt="clock" height="12px">
+              <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" alt="phone" height="12px">
+              <img src="https://www.freeiconspng.com/thumbs/wifi-icon/black-wifi-icon-32.png" alt="wi-fi" height="12px">
+              <img src="https://icon-library.com/images/signal-bar-icon/signal-bar-icon-18.jpg" alt="network" height="12px">
+              <span>100%</span>
+              <img src="https://simpleicon.com/wp-content/uploads/battery-full.png" alt="battery" height="15px">
+              <span>20:44</span>
+            </div>
+          </div>
+
+          <div id="smartphone-apps">
+          </div>
+        </div>
+        <div id="smartphone-button"></div>
+      </div>
+    </div>
+</body>
+</html>
